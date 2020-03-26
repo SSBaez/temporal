@@ -4,9 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/programa.js"></script>
+  <script type="text/javascript">
+    function miFuncion1() {
+      alert("hola desde funcion 1")
+    }
+  </script>
   <title>Document</title>
 </head>
 <body>
-  <h1>PUTOS DE MIERDA</h1>
+  <br>
+  <button type="button" name="button" onclick="miFuncion1()">Ejecutar funcion 1</button>
+  <br><br>
+  <button type="button" name="button" onclick="miFuncion2('jose')">Ejecutar funcion 2</button>
+  <br><br>
+  <label>Porporcionar Nombre</label>
+  <input type="text" name="nombre" onchange="mostrarNombre2(this);"/>
+  <div class="resultado" id="resultado"></div>
+  <h1>Determinar clasificacion por edades</h1>
+  <label for="edad">Proporcioanr la edad (Enter)</label>
+  <input type="text" name="edad" onchange="clasificacionEdad(this);">
+  <div>Peliculas con clasificacion sugeridas</div>
+  <div class="clasificacion" id="clasificacion" style="color:red"></div>
 </body>
 </html>
